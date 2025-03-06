@@ -1,7 +1,7 @@
 
 <main>
   {{this.title}}
-  <img [src]="imageUrl" alt="Logo">
+  <img [src]="imageUrl" alt="Logo" (click)="logoOnClick($event)">
 </main>
 
 <router-outlet />
