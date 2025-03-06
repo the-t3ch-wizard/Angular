@@ -26,7 +26,7 @@ export class AppComponent {
 
   onInputHandler($event: Event){
     const nameRegex = new RegExp('^[A-Z]{1}[A-Za-z]{2,}$');
-    if (!nameRegex.test(this.name)) this.nameError = "Name should be atleast 3 characters with 1st character capital"
+    if (!nameRegex.test(this.name)) this.nameError = "Name is Incorrect!"
     else this.nameError = ""
   }
 }
