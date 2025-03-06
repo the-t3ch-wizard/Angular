@@ -1,8 +1,35 @@
 
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
 img {
   padding: 10px;
-  width: 100px;
-  height: 100px;
+  width: 25rem;
+  height: 25rem;
   border: 2px solid;
   border-radius: 100%;
+}
+
+input {
+  font-size: larger;
+  padding: 0 1rem;
+  width: 20rem;
+  height: 2rem;
 }

@@ -1,13 +1,14 @@
 
-<main>
-  <div>
+<main class="main flex-center flex-col gap-2">
+  <div class="flex-center flex-col gap-2">
     <h1>
       Hello {{this.name}} from BridgeLabz
     </h1>
     <img [src]="imageUrl" alt="Logo" (click)="logoOnClickHandler($event)">
   </div>
-  <div>
-    <input [(ngModel)]="name">
+  <div class="flex-center flex-col gap-2">
+    <input (input)="onInputHandler($event)" [(ngModel)]="name">
+    <p>{{this.nameError}}</p>
   </div>
 </main>
 
