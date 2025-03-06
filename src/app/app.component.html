@@ -1,7 +1,14 @@
 
 <main>
-  {{this.title}}
-  <img [src]="imageUrl" alt="Logo" (click)="logoOnClickHandler($event)">
+  <div>
+    <h1>
+      Hello {{this.name}} from BridgeLabz
+    </h1>
+    <img [src]="imageUrl" alt="Logo" (click)="logoOnClickHandler($event)">
+  </div>
+  <div>
+    <input [(ngModel)]="name">
+  </div>
 </main>
 
 <router-outlet />
